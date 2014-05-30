@@ -32,7 +32,7 @@
     
     //1.读取微博
     AppDelegate *appdel=[[UIApplication sharedApplication] delegate];
-    [appdel.weiboHepler ]
+//    [appdel.weiboHepler ]
     
 }
 

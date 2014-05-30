@@ -41,7 +41,7 @@
 
 
 -(void)TimeLine{
-    [self.sinaweibo ];
+//    [self.sinaweibo ];
 }
 
 - (void)sinaweiboDidLogIn:(SinaWeibo *)sinaweibo{

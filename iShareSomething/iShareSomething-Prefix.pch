@@ -16,14 +16,14 @@
 #import "SinaWeibo.h"
 #import <objc/runtime.h>
 
-#define Host @"127.0.0.1"
-#define Domain @"@im.xujialiang.net"
+#define Host @"192.168.0.142"
+#define Domain @"@localhost"
 
 
 
-#define kAppKey             @"2750066678"
-#define kAppSecret          @"b6ec0d32eff854e1c3257b8cd6e4d645"
-#define kAppRedirectURI     @"http://im.xujialiang.net"
+#define kAppKey             @"3593499757"
+#define kAppSecret          @"3d8214e22cd9a710f7419fcfa39e3fb8"
+#define kAppRedirectURI     @"https://api.weibo.com/oauth2/default.html"
 
 #ifndef kAppKey
 #error

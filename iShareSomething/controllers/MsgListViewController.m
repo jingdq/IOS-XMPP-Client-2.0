@@ -15,6 +15,9 @@
 #import "XmppHelper+Roster.h"
 #import "XMPPRosterMemoryStorage.h"
 @interface MsgListViewController ()
+{
+    XMPPUserMemoryStorageObject *_userinfo;
+}
 @property (nonatomic,strong) NSDictionary *data;
 @property (nonatomic,strong) NSMutableArray *keys;
 @property (nonatomic,strong) ChatSessionViewController *destview;
@@ -69,15 +72,25 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString  *user=[self.keys objectAtIndex:indexPath.row];
-    XMPPUserMemoryStorageObject *userinfo=[[[XmppHelper Instance] xmppRosterMemoryStorage] userForJID:[XMPPJID jidWithString:user]];
-    self.destview.userinfo=userinfo;
+    _userinfo=[[[XmppHelper Instance] xmppRosterMemoryStorage] userForJID:[XMPPJID jidWithString:user]];
+    
+  [self performSegueWithIdentifier:@"toChatSession" sender:nil];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     self.destview = segue.destinationViewController;
     XmppHelper *helper=[XmppHelper Instance];
     helper.msgrev=self.destview;
+    self.destview.userinfo=_userinfo;
+   
 }
+
+
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    return NO;
+}
+
 
 - (void)didReceiveMemoryWarning
 {

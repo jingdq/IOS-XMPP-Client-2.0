@@ -90,7 +90,7 @@
     
     Message *message= [[Message alloc] init];
     message.from=[[[[XmppHelper Instance] xmppStream] myJID] bare];
-    message.to=self.userinfo.jid.bare;
+    message.to=self.userinfo.jid.bare;//
     message.message=self.txtmsg.text;
     message.date=[NSDate date];
     [[XmppHelper Instance] sendMessage:message];

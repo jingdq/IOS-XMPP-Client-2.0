@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="0UP-JP-0Ho">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="0UP-JP-0Ho">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <development version="4600" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -910,7 +910,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25k-Mh-MsW">
-                                <rect key="frame" x="20" y="87" width="280" height="43"/>
+                                <rect key="frame" x="20" y="87" width="280" height="45"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="确定">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
@@ -1595,7 +1595,7 @@
                                             <outlet property="name" destination="4Ia-P0-ssn" id="MDt-pL-5oT"/>
                                             <outlet property="photo" destination="clB-3A-YTu" id="sgx-NW-y9X"/>
                                             <outlet property="time" destination="P8h-w6-WqY" id="BPo-XG-nWh"/>
-                                            <segue destination="rOn-0i-wEy" kind="push" id="06M-5j-gz7"/>
+                                            <segue destination="rOn-0i-wEy" kind="push" identifier="toChatSession" id="06M-5j-gz7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1626,11 +1626,6 @@
     </scenes>
     <resources>
         <image name="micromsg.png" width="30" height="30"/>
-        <image name="photo.png" width="44" height="44"/>
-        <image name="photo.png" width="44" height="44"/>
-        <image name="photo.png" width="44" height="44"/>
-        <image name="photo.png" width="44" height="44"/>
-        <image name="photo.png" width="44" height="44"/>
         <image name="photo.png" width="44" height="44"/>
         <image name="sina.png" width="30" height="30"/>
     </resources>
